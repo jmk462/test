@@ -1,0 +1,317 @@
+> plot(M)
+<!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
+<!-- Sun Jun 22 19:37:10 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID20103cfb1a45 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "1",
+new Date(2014,5,18),
+"2014-06-18",
+901.9,
+520,
+20,
+5 
+],
+[
+ "1",
+new Date(2014,5,19),
+"2014-06-19",
+170.8,
+256,
+8,
+54 
+],
+[
+ "1",
+new Date(2014,5,20),
+"2014-06-20",
+1199.5,
+24,
+18,
+32 
+],
+[
+ "1",
+new Date(2014,5,21),
+"2014-06-21",
+1093.5,
+2654,
+17,
+21 
+],
+[
+ "1",
+new Date(2014,5,22),
+"2014-06-22",
+168.9,
+408.2,
+5,
+6 
+],
+[
+ "2",
+new Date(2014,5,18),
+"2014-06-18",
+123,
+45,
+9,
+2 
+],
+[
+ "2",
+new Date(2014,5,19),
+"2014-06-19",
+654,
+3,
+8,
+3 
+],
+[
+ "2",
+new Date(2014,5,20),
+"2014-06-20",
+87,
+6864,
+7,
+6 
+],
+[
+ "2",
+new Date(2014,5,21),
+"2014-06-21",
+654,
+98,
+4,
+5 
+],
+[
+ "2",
+new Date(2014,5,22),
+"2014-06-22",
+48,
+8,
+5,
+9 
+],
+[
+ "3",
+new Date(2014,5,18),
+"2014-06-18",
+65,
+57,
+54,
+4 
+],
+[
+ "3",
+new Date(2014,5,19),
+"2014-06-19",
+12,
+96,
+6,
+1 
+],
+[
+ "3",
+new Date(2014,5,20),
+"2014-06-20",
+325,
+8,
+5,
+12 
+],
+[
+ "3",
+new Date(2014,5,21),
+"2014-06-21",
+215,
+874,
+25,
+9 
+],
+[
+ "3",
+new Date(2014,5,22),
+"2014-06-22",
+658,
+4,
+4,
+6 
+],
+[
+ "4",
+new Date(2014,5,18),
+"2014-06-18",
+645,
+5,
+4,
+3 
+],
+[
+ "4",
+new Date(2014,5,19),
+"2014-06-19",
+321,
+987,
+7,
+2 
+],
+[
+ "4",
+new Date(2014,5,20),
+"2014-06-20",
+32465,
+654,
+88,
+55 
+],
+[
+ "4",
+new Date(2014,5,21),
+"2014-06-21",
+54,
+78,
+4,
+77 
+],
+[
+ "4",
+new Date(2014,5,22),
+"2014-06-22",
+687,
+98,
+8,
+8 
+],
+[
+ "5",
+new Date(2014,5,18),
+"2014-06-18",
+689,
+78,
+5,
+9 
+],
+[
+ "5",
+new Date(2014,5,19),
+"2014-06-19",
+654,
+98,
+5,
+5 
+],
+[
+ "5",
+new Date(2014,5,20),
+"2014-06-20",
+321,
+87,
+26,
+5 
+],
+[
+ "5",
+new Date(2014,5,21),
+"2014-06-21",
+654,
+897,
+5,
+22 
+],
+[
+ "5",
+new Date(2014,5,22),
+"2014-06-22",
+87,
+45,
+2,
+3 
+] 
+];
+data.addColumn('string','ID');
+data.addColumn('date','BetterTime');
+data.addColumn('string','Time');
+data.addColumn('number','Overall.Kill.Value');
+data.addColumn('number','Overall.Loss.Value');
+data.addColumn('number','Number.of.Kills');
+data.addColumn('number','Number.of.Losses');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID20103cfb1a45() {
+var data = gvisDataMotionChartID20103cfb1a45();
+var options = {};
+options["width"] =    600;
+options["height"] =    500;
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID20103cfb1a45')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID20103cfb1a45);
+})();
+function displayChartMotionChartID20103cfb1a45() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID20103cfb1a45"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID20103cfb1a45"
+  style="width: 600px; height: 500px;">
+</div>
+> 
